@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do V2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-cont">
+        <div class="all-task">
+            <div class="todo-app">
+                <div class="row">
+                    <input type="text" id="input-box2" placeholder="Введите задачу">
+                    <button onclick="addTask(2)">+</button>
+                </div>
+                <ul id="list-container2">
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-col">
+
+            <div class="timer-cont">
+                <div class="timer" id="timer">
+                    25:00
+                </div>
+                <div class="control-btns">
+                    <button class="toggle-btn" onclick="togglePauseResume()"><img src="images/play-circle.svg" alt=""></button>
+                    <button class="restart-btn" onclick="restartTimer()"><img src="images/rotate-left.svg" alt=""></button>
+                    <button class="set-btn" onclick="chooseTime()"><img src="images/settings.svg" alt=""></button>
+                </div>
+            </div>
+
+            <div class="todo-app">
+                <div class="row">
+                    <input type="text" id="input-box1" placeholder="Введите задачу">
+                    <button onclick="addTask(1)">+</button>
+                </div>
+                <ul id="list-container1">
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="write-col">
+            <textarea name="freeText" id="freeText" onkeyup='saveValue(this)' cols="30" rows="10" class="free-text" placeholder="Поле для заметок"></textarea>
+        </div>
+    </div>
+    
+
+    <script src="list.js"></script>
+    <script src="timer.js"></script>
+</body>
+</html>
