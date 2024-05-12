@@ -75,7 +75,7 @@ input {
     border: none;
     outline: none;
     padding: 16px 20px;    
-    background: #ff5945;
+    background: #4564ffca;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -99,7 +99,7 @@ ul li {
 }
 
 ul li.checked {
-    color: #ff5945 ;
+    color: #626262 ;
     text-decoration: line-through;
 }
 
