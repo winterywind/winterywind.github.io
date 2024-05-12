@@ -1,0 +1,17 @@
+/* --------------media---------------- */
+    
+@media screen and (max-height: 950px){
+    .timer-cont {
+        padding: 10px 10px 25px;
+    }
+
+    .timer {
+        margin: 5% auto;
+        font-size: 50pt;
+    }
+
+    .control-btns button{
+        padding: 5px;
+    }
+
+}

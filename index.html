@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do V2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/media.css">
 </head>
 <body>
     <div class="main-cont">
         <div class="all-task">
             <div class="todo-app">
                 <div class="row">
-                    <input type="text" id="input-box2" placeholder="Введите задачу">
+                    <input type="text" id="input-box2" placeholder="Список всех дел">
                     <button onclick="addTask(2)">+</button>
                 </div>
                 <ul id="list-container2">
@@ -27,15 +28,15 @@
                     25:00
                 </div>
                 <div class="control-btns">
-                    <button class="toggle-btn" onclick="togglePauseResume()"><img src="images/play-circle.svg" alt=""></button>
-                    <button class="restart-btn" onclick="restartTimer()"><img src="images/rotate-left.svg" alt=""></button>
-                    <button class="set-btn" onclick="chooseTime()"><img src="images/settings.svg" alt=""></button>
+                    <button class="toggle-btn" onclick="togglePauseResume()"><img src="src/images/play-circle.svg" alt=""></button>
+                    <button class="restart-btn" onclick="restartTimer()"><img src="src/images/rotate-left.svg" alt=""></button>
+                    <button class="set-btn" onclick="chooseTime()"><img src="src/images/settings.svg" alt=""></button>
                 </div>
             </div>
 
             <div class="todo-app">
                 <div class="row">
-                    <input type="text" id="input-box1" placeholder="Введите задачу">
+                    <input type="text" id="input-box1" placeholder="Список на сегодня">
                     <button onclick="addTask(1)">+</button>
                 </div>
                 <ul id="list-container1">
@@ -50,7 +51,7 @@
     </div>
     
 
-    <script src="list.js"></script>
-    <script src="timer.js"></script>
+    <script src="src/list.js"></script>
+    <script src="src/timer.js"></script>
 </body>
 </html>

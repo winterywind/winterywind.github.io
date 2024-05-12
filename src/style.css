@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+/* ------------------------------------------ */
+
+body {
+    background: linear-gradient(135deg,rgb(230, 251, 253), rgb(140, 199, 255) );
+    color: black;
+}
+
+textarea {
+    resize: none;
+}
+
+.main-cont {
+    display: flex;
+    justify-content: space-evenly;
+
+    height: 100vh;
+    width: 100%;
+}
+
+.all-task {
+    width: 33%;
+    height: 100%;
+
+    display: flex;
+}
+
+
+
+/* ---------------TODO-ALL----------------------- */
+
+
+.todo-app {
+    width: 90%;
+    background-color: rgba(132, 179, 255, 0.5);
+    margin: 35px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    max-height: 100% - 56px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: 00000039;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+.todo-app button {
+    border: none;
+    outline: none;
+    padding: 16px 20px;    
+    background: #ff5945;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 20px 12px 20px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 18pt;
+    position: relative;
+    background-color: white;
+    border: gray 2px solid;
+    border-radius: 15px;
+    margin-bottom: 3px;
+
+}
+
+ul li.checked {
+    color: #ff5945 ;
+    text-decoration: line-through;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #adadad;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background-color: #f9a0a0;
+    transition: 0.25s ;
+}
+
+
+/* -------------TODAY LIST-------------------- */
+
+.main-col {
+    width: 33%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.main-col .todo-app {
+    height: 75%;
+}
+
+/* ---------------TIMER------------------- */
+
+.timer-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    width: 90%;
+    margin: 35px auto 20px;
+    padding: 40px 30px 70px;
+
+    background: rgba(132, 179, 255, 0.5);
+    border-radius: 10px;
+}
+
+.timer {
+    width: 100%;
+    height: 50%;
+    margin: 10% auto;
+
+    font-size: 60pt;
+    font-weight: bold;
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+    text-shadow: #0055ff 0px 2px 5px;
+
+    
+}
+
+.control-btns {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 10%;
+}
+
+.control-btns button {
+    background-color: white;
+    padding: 10px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.control-btns button:active {
+    background-color:darkgrey;
+}
+
+/*-----------------FREE TEXT--------------------- */
+
+
+.write-col {
+    width: 33%;
+    height: 100%;   
+
+    display: flex;
+}
+
+.free-text {
+    width: 90%;
+    background-color: white;
+    margin: 35px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    max-height: 100% - 56px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    font-size: 20px;
+    font-size: max(20px,1em);
+}
+
+
+
