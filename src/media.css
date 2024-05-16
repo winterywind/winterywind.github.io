@@ -16,6 +16,23 @@
 
 }
 
+@media screen and (max-width: 1150px) {
+    
+    .todo-app button {
+        display: none;
+    }
+
+    ul li {
+        font-size: 15px;
+    }
+
+    ul li span {
+        font-size: 18px;
+        top: 0;
+    }
+}
+
+
 @media screen and (max-width: 900px) {
     .all-task {
         display: none;
